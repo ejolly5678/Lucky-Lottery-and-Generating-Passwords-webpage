@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework Six</title>
+
+        <meta charset="UTF8-8">
+        <script type = "text/javascript" src = "luck.js" > </script>
+        <link rel="stylesheet" type="text/css" href="luck.css">
+    </head>
+    <body>
+    <h1>  Try your luck at the lottery or create randomly generated passwords!</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="luck(event, 'Lottery')">Lottery</button>
+    <button class="tablinks" onclick="luck(event, 'Password')">Password</button>
+  </div>
+    <div id="Lottery" class="tabcontent">
+      <h2>Lottery</h2>
+      <h3>Put values 1-70 for the first 5 balls and put a value 1-25 for the last ball.</h3>
+      <table id="lottoTable">
+        <tr>
+          <td>
+            <label> Ball 1 </label>
+            <input type="number" name="lotto1" id="lotto1" max="70" min="1"</><br/>
+          </td>
+          <td>
+            <label> Ball 2 </label>
+            <input type="number" name="lotto2" id="lotto2" max="70" min="1"</><br/>
+          </td>
+          <td>        <label> Ball 3 </label>
+            <input type="number" name="lotto3" id="lotto3" max="70" min="1"</><br/>
+          </td>
+          <td>
+            <label> Ball 4 </label>
+            <input type="number" name="lotto4" id="lotto4" max="70" min="1"</><br/>
+          </td>
+          <td>
+            <label> Ball 5 </label>
+            <input type="number" name="lotto5" id="lotto5" max="70" min="1"</><br/>
+          </td>
+          <td>
+            <label> PowerBall </label>
+            <input type="number" name="powerball" id="powerball" max="25" min="1"</><br/>
+          </td>
+          <td>
+          <button class="button submit" onClick="check()" id="submit">Submit Data</button>
+        </td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="Password" class="tabcontent">
+<h2> Password</h2>
+<table id=passTable>
+  <tr>
+    <td>
+      <button class="button password" onClick="generatePasswords();" id="generate passwords">Genearte Passwords</button>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
+    </body>
+    </html>
