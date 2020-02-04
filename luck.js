@@ -1,4 +1,11 @@
+/*
+Elizabeth Jolly
+Fall 2018
+*/
 
+/*
+luck takes controls the luck part of the screen
+*/
 function luck(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,13 +20,18 @@ function luck(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+/*
+lotto balls generates an indiviual random ball that is shown on the screen
+*/
 function lottoPowerBall(){
-
   var PB = 0;
   PB = Math.floor((0+Math.random() * 25) + 1);
   return PB;
 }
-
+/*
+lottonumber generates all of the balls for the winning lottery and returns them
+as an array
+*/
 function lottoNumber(){
   var a = 0;
   var lottoArray = [0];
@@ -30,7 +42,10 @@ function lottoNumber(){
   }
   return lottoArray;
   }
-
+/*
+check compares the lotto numbers generates with the numbers that the user has
+inputed to compete in the lottery
+*/
  function check(){
 
    var lottoBalls = lottoNumber();
@@ -67,10 +82,11 @@ function lottoNumber(){
    cell5.innerHTML = lottoBalls[3];
    cell6.innerHTML = lottoBalls[4];
    cell7.innerHTML = lottoBalls[5];
-
-
  }
-
+/*
+generates 10 passwords for the user. Adds them onto the end of the previously
+generated passwords. Uses the generateOnePassword function
+*/
  function generatePasswords(){
    count = 0;
    var passwords = [0];
@@ -87,7 +103,9 @@ function lottoNumber(){
   }
 
  }
-
+/*
+generates a singular password. used for the generate passwords function
+*/
  function generateOnePassword() {
          var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#{$%^&*()♥+-=,.~``?/";
          var pass = "";

@@ -1,9 +1,13 @@
+/*
+Elizabeth Jolly
+Fall 2018
+*/
 body{
   background-color: #d9e1ad;
   color:#3a2f24;
   text-align:center;
-
 }
+
 h1{
   text-align: center;
 }
@@ -24,7 +28,7 @@ h1{
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    
+
 }
 
 .tab button:hover {
